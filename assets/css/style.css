@@ -333,6 +333,66 @@ header nav ul li a {
     min-width: 600px;
 }
 
+/* PROCESS SECTION STYLES */
+
+.process {
+    background-color: #16111B;
+    padding: 80px 30px;
+}
+
+.process__container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.process__text {
+    max-width: 1350px;
+    margin: 0 auto 48px auto;
+}
+
+.process__label {
+    display: block;
+    color: #c560f0;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
+}
+
+.process__steps {
+    display: grid;
+    gap: 32px;
+}
+
+.process__number {
+    width: 48px;
+    height: 48px;
+    background-color: #B76DFF;
+    color: #16111B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 24px;
+    box-shadow: 0 0 18px rgba(183, 109, 255, 0.7);
+}
+
+.process__step h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.process__step p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #cfc2d6;
+    margin-bottom: 0;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 900px) {
@@ -403,6 +463,11 @@ header nav ul li a {
 
     .services__cards {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process__steps {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
     }
 
 }
