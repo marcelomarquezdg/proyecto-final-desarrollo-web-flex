@@ -28,6 +28,15 @@ h2 {
     line-height: 1.2;
 }
 
+.section-label {
+    display: block;
+    color: #c560f0;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
+}
+
 .button {
     display: inline-block;
     text-decoration: none;
@@ -165,15 +174,6 @@ h2 {
     margin: 0 auto 48px auto;
 }
 
-.problem__label {
-    display: block;
-    color: #c560f0;
-    font-size: 0.75rem;
-    font-weight: 400;
-    letter-spacing: 0.12em;
-    margin-bottom: 16px;
-}
-
 .problem .card {
     background-color: #251f29;
     border: 1px solid #342b3a;
@@ -222,14 +222,6 @@ h2 {
     margin-bottom: 48px;
 }
 
-.solution__label {
-    display: block;
-    color: #c560f0;
-    font-size: 0.75rem;
-    font-weight: 400;
-    letter-spacing: 0.12em;
-    margin-bottom: 16px;
-}
 
 .solution__cards {
     display: grid;
@@ -363,15 +355,6 @@ h2 {
     margin: 0 auto 48px auto;
 }
 
-.process__label {
-    display: block;
-    color: #c560f0;
-    font-size: 0.75rem;
-    font-weight: 400;
-    letter-spacing: 0.12em;
-    margin-bottom: 16px;
-}
-
 .process__steps {
     display: grid;
     gap: 32px;
@@ -424,15 +407,6 @@ h2 {
 
 .projects__text {
     max-width: 850px;
-}
-
-.projects__label {
-    display: block;
-    color: #c560f0;
-    font-size: 0.75rem;
-    font-weight: 400;
-    letter-spacing: 0.12em;
-    margin-bottom: 16px;
 }
 
 .projects__text p {
@@ -573,6 +547,47 @@ h2 {
     font-size: 0.95rem;
 }
 
+/* SERVICES PAGE */
+
+.servicios-hero {
+    background: radial-gradient(circle at right, #2a1635 0%, #16111B 45%, #0f0b13 100%);
+    padding: 80px 30px;
+}
+
+.servicios-hero__container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.servicios-hero__content {
+    max-width: 760px;
+}
+
+.servicios-hero h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.servicios-hero p {
+    color: #cfc2d6;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.servicios-hero__buttons {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.servicios-hero__image {
+    display: none;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -693,5 +708,31 @@ h2 {
     .footer__links {
         display: flex;
         gap: 80px;
+    }
+
+    .servicios-hero {
+        padding: 100px 60px;
+    }
+
+    .servicios-hero__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .servicios-hero h1 {
+        font-size: 4rem;
+    }
+
+    .servicios-hero__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicios-hero__image img {
+        width: 75%;
+        display: block;
     }
 }
