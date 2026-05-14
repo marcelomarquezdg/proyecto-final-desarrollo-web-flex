@@ -49,48 +49,61 @@ h2 {
     background-color: #1d1d1db7;
 }
 
-/* HEADER - MOBILE FIRST */
 
-header {
+/* NAVBAR BOOTSTRAP */
+
+.navbar {
     background-color: #1d1d1d;
     padding: 10px 30px;
 }
 
-.header__content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar .container-fluid {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.logo {
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand .logo {
     width: 10rem;
 }
 
-/* NAVBAR - MOBILE FIRST */
-
-header nav {
-    display: none;
-}
-
-.menu-hamburguesa {
-    width: 3rem;
-    display: block;
-}
-
-/* NAVBAR LINKS */
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    column-gap: 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
+.navbar .nav-link {
     color: #cfc2d6;
     font-weight: 400;
+    padding: 6px 0;
 }
+
+.navbar .nav-link:hover {
+    color: #ffffff;
+}
+
+.navbar .nav-link.active {
+    color: #ffffff;
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    padding-top: 14px;
+    padding-left: 10px;
+}
+
+.navbar .navbar-nav {
+    gap: 8px;
+}
+
 
 /* HERO STYLES*/
 
@@ -330,7 +343,7 @@ header nav ul li a {
 }
 
 .services__cta .button {
-    min-width: 100%;
+    width: 100%;
 }
 
 /* PROCESS SECTION STYLES */
@@ -564,12 +577,9 @@ header nav ul li a {
 /* MEDIA QUERIES */
 
 @media (min-width: 900px) {
-    .menu-hamburguesa {
-        display: none;
-    }
-
-    header nav {
-        display: block;
+    .navbar-collapse {
+        padding-top: 0;
+        padding-left: 0;
     }
 
     .hero {
