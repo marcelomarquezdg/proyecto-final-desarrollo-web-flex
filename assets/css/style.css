@@ -711,6 +711,47 @@ h2 {
     margin-bottom: 0;
 }
 
+/* PROCESS PAGE */
+
+.proceso-hero {
+    background: radial-gradient(circle at right, #12383f 0%, #16111B 45%, #0f0b13 100%);
+    padding: 80px 30px;
+}
+
+.proceso-hero__container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.proceso-hero__content {
+    max-width: 760px;
+}
+
+.proceso-hero h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.proceso-hero p {
+    color: #cfc2d6;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.proceso-hero__buttons {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.proceso-hero__image {
+    display: none;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -905,5 +946,31 @@ h2 {
 
     .services-table__includes ul {
         margin-bottom: 0;
+    }
+
+    .proceso-hero {
+        padding: 100px 60px;
+    }
+
+    .proceso-hero__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .proceso-hero h1 {
+        font-size: 4rem;
+    }
+
+    .proceso-hero__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proceso-hero__image img {
+        width: 85%;
+        display: block;
     }
 }
