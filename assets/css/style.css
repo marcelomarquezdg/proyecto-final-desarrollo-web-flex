@@ -114,7 +114,7 @@ h2 {
 }
 
 
-/* HERO STYLES*/
+/* INDEX PAGE - HERO STYLES */
 
 .hero {
     background-image: url("../img/fondo-hero.png");
@@ -156,7 +156,7 @@ h2 {
     display: none;
 }
 
-/* PROBLEM SECTION STYLES */
+/* INDEX PAGE - PROBLEM SECTION STYLES */
 
 .problem {
     background-color: #1d1d1d;
@@ -206,7 +206,7 @@ h2 {
     margin-bottom: 24px;
 }
 
-/* SOLUTION SECTION STYLES */
+/* INDEX PAGE - SOLUTION SECTION STYLES */
 
 .solution {
     background-color: #16111B;
@@ -273,7 +273,7 @@ h2 {
     height: 100%;
 }
 
-/* SERVICES SECTION STYLES */
+/* INDEX PAGE - SERVICES SECTION STYLES */
 
 .services {
     background-color: #1f1a23;
@@ -338,7 +338,7 @@ h2 {
     width: 100%;
 }
 
-/* PROCESS SECTION STYLES */
+/* INDEX PAGE - PROCESS SECTION STYLES */
 
 .process {
     background-color: #16111B;
@@ -389,7 +389,7 @@ h2 {
     margin-bottom: 0;
 }
 
-/* PROJECTS SECTION STYLES */
+/* INDEX PAGE - PROJECTS SECTION STYLES */
 
 .projects {
     background-color: #1d1d1d;
@@ -456,7 +456,7 @@ h2 {
     margin: 0 24px 24px;
 }
 
-/* CONTACT STYLES */
+/* INDEX PAGE - CONTACT SECTION STYLES */
 
 .contact {
     background: radial-gradient(circle at bottom left, #2a1635 0%, #16111B 45%, #0f0b13 100%);
@@ -491,7 +491,7 @@ h2 {
     width: 100%;
 }
 
-/* FOOTER STYLES */
+/* INDEX PAGE - FOOTER STYLES */
 
 .footer {
     background-color: #1d1d1d;
@@ -549,44 +549,48 @@ h2 {
 
 /* SERVICES PAGE */
 
-.servicios-hero {
+/* SERVICES PAGE - SERVICES HERO SECTION */
+
+.services-hero {
     background: radial-gradient(circle at right, #2a1635 0%, #16111B 45%, #0f0b13 100%);
     padding: 80px 30px;
 }
 
-.servicios-hero__container {
+.services-hero__container {
     max-width: 1350px;
     margin: 0 auto;
 }
 
-.servicios-hero__content {
+.services-hero__content {
     max-width: 760px;
 }
 
-.servicios-hero h1 {
+.services-hero h1 {
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 1.1;
     margin-bottom: 24px;
 }
 
-.servicios-hero p {
+.services-hero p {
     color: #cfc2d6;
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 0;
 }
 
-.servicios-hero__buttons {
+.services-hero__buttons {
     margin-top: 32px;
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
 }
 
-.servicios-hero__image {
+.services-hero__image {
     display: none;
 }
+
+/* SERVICES PAGE - SERVICES AREAS SECTION */
 
 .services-areas {
     background-color: #110C15;
@@ -638,7 +642,7 @@ h2 {
     margin-bottom: 0;
 }
 
-/* SERVICES TABLE SECTION */
+/* SERVICES PAGE - SERVICES TABLE SECTION */
 
 .services-table {
     background-color: #16111B;
@@ -713,43 +717,114 @@ h2 {
 
 /* PROCESS PAGE */
 
-.proceso-hero {
+/* PROCESS PAGE - PROCESS HERO SECTION */
+
+.process-hero {
     background: radial-gradient(circle at right, #12383f 0%, #16111B 45%, #0f0b13 100%);
     padding: 80px 30px;
 }
 
-.proceso-hero__container {
+.process-hero__container {
     max-width: 1350px;
     margin: 0 auto;
 }
 
-.proceso-hero__content {
+.process-hero__content {
     max-width: 760px;
 }
 
-.proceso-hero h1 {
+.process-hero h1 {
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 1.1;
     margin-bottom: 24px;
 }
 
-.proceso-hero p {
+.process-hero p {
     color: #cfc2d6;
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 0;
 }
 
-.proceso-hero__buttons {
+.process-hero__buttons {
     margin-top: 32px;
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
 }
 
-.proceso-hero__image {
+.process-hero__image {
     display: none;
+}
+
+/* PROCESS PAGE - PROCESS METHOD SECTION */
+
+.process-method {
+    background-color: #110C15;
+    padding: 80px 30px;
+}
+
+.process-method__container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.process-method__content {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 48px auto;
+}
+
+.process-method__content p {
+    color: #cfc2d6;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.process-method__cards {
+    display: grid;
+    gap: 24px;
+}
+
+.process-method__card {
+    background-color: #251f29;
+    border: 1px solid #342b3a;
+    border-radius: 16px;
+    padding: 32px;
+    height: 100%;
+}
+
+.process-method__card-circle {
+    width: 56px;
+    height: 56px;
+    background-color: #B76DFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 0 18px rgba(183, 109, 255, 0.45);
+}
+
+.process-method__card-circle img {
+    width: 36px;
+}
+
+.process-method__card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.process-method__card p {
+    color: #cfc2d6;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
 }
 
 
@@ -874,28 +949,28 @@ h2 {
         gap: 80px;
     }
 
-    .servicios-hero {
+    .services-hero {
         padding: 100px 60px;
     }
 
-    .servicios-hero__container {
+    .services-hero__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         gap: 60px;
     }
 
-    .servicios-hero h1 {
+    .services-hero h1 {
         font-size: 4rem;
     }
 
-    .servicios-hero__image {
+    .services-hero__image {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .servicios-hero__image img {
+    .services-hero__image img {
         width: 75%;
         display: block;
     }
@@ -948,29 +1023,34 @@ h2 {
         margin-bottom: 0;
     }
 
-    .proceso-hero {
+    .process-hero {
         padding: 100px 60px;
     }
 
-    .proceso-hero__container {
+    .process-hero__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         gap: 60px;
     }
 
-    .proceso-hero h1 {
+    .process-hero h1 {
         font-size: 4rem;
     }
 
-    .proceso-hero__image {
+    .process-hero__image {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .proceso-hero__image img {
+    .process-hero__image img {
         width: 85%;
         display: block;
     }
+
+    .process-method__cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
