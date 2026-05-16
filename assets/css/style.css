@@ -771,9 +771,8 @@ h2 {
 }
 
 .process-method__content {
-    text-align: center;
     max-width: 850px;
-    margin: 0 auto 48px auto;
+    margin-bottom: 48px;
 }
 
 .process-method__content p {
@@ -827,8 +826,196 @@ h2 {
     margin-bottom: 0;
 }
 
+/* PROCESS PAGE - PROCESS STEPS SECTION */
+
+.process-steps {
+    background-color: #16111B;
+    padding: 80px 30px;
+}
+
+.process-steps__container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.process-steps__content {
+    max-width: 760px;
+    margin-bottom: 48px;
+}
+
+.process-steps__content p {
+    color: #cfc2d6;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.process-steps__list {
+    display: grid;
+    gap: 32px;
+}
+
+.process-steps__item {
+    background-color: #251f29;
+    border: 1px solid #342b3a;
+    border-radius: 16px;
+    padding: 32px;
+    height: 100%;
+}
+
+.process-steps__number {
+    width: 48px;
+    height: 48px;
+    background-color: #B76DFF;
+    color: #16111B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 24px;
+    box-shadow: 0 0 18px rgba(183, 109, 255, 0.7);
+}
+
+.process-steps__item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.process-steps__item p {
+    color: #cfc2d6;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* PROCESS PAGE - PROCESS RESULTS SECTION */
+
+.process-results {
+    background-color: #110C15;
+    padding: 80px 30px;
+}
+
+.process-results__container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.process-results__content {
+    max-width: 850px;
+    margin-bottom: 48px;
+}
+
+.process-results__content p {
+    color: #cfc2d6;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.process-results__cards {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.process-results__card {
+    background-color: #251f29a6;
+    border: 1px solid #342b3a;
+    border-radius: 16px;
+    padding: 32px;
+    height: 100%;
+}
+
+.process-results__card-circle {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(183, 109, 255, 0.18);
+    border: 1px solid rgba(183, 109, 255, 0.55);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 0 24px rgba(183, 109, 255, 0.35);
+}
+
+.process-results__card-circle img {
+    width: 36px;
+}
+
+.process-results__card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.process-results__card p {
+    color: #cfc2d6;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.process-results__highlight {
+    background: radial-gradient(circle at right, rgba(35, 135, 155, 0.25), rgba(37, 31, 41, 0.75) 55%);
+    border: 1px solid rgba(35, 135, 155, 0.75);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.process-results__highlight-circle {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(35, 135, 155, 0.22);
+    border: 1px solid rgba(35, 135, 155, 0.75);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 0 24px rgba(35, 135, 155, 0.4);
+}
+
+.process-results__highlight-circle img {
+    width: 36px;
+}
+
+.process-results__highlight-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.process-results__highlight-content p {
+    color: #d8f3f7;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
 
 /* MEDIA QUERIES */
+
+/* MEDIA QUERIES TABLET */
+
+@media (min-width: 768px) {
+    .process-steps__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-results__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MEDIA QUERIES DESKTOP */
 
 @media (min-width: 900px) {
     .navbar-collapse {
@@ -1051,6 +1238,25 @@ h2 {
 
     .process-method__cards {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process-steps__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process-results__cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process-results__highlight {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .process-results__highlight-circle {
+        flex: 0 0 56px;
+        margin-bottom: 0;
     }
 
 }
