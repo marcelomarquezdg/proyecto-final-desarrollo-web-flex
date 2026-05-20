@@ -1,4 +1,7 @@
 @use '../base/variables' as *;
+@use '../base/extends' as *;
+@use '../base/mixins' as *;
+
 
 /* PROCESS PAGE */
 
@@ -77,10 +80,8 @@
     }
 
     .process-method__card {
+        @extend %card-base;
         background-color: rgba(37, 31, 41, 0.72);
-        border: 1px solid $color-borde-card;
-        border-radius: 16px;
-        padding: 32px;
         height: 100%;
 
         h3 {
@@ -105,9 +106,7 @@
         background-color: rgba(183, 109, 255, 0.18);
         border: 1px solid rgba(183, 109, 255, 0.35);
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         margin-bottom: 24px;
         box-shadow: 0 0 18px rgba(183, 109, 255, 0.35);
 
@@ -146,10 +145,8 @@
     }
 
     .process-steps__item {
+        @extend %card-base;
         background-color: $color-fondo-card;
-        border: 1px solid $color-borde-card;
-        border-radius: 16px;
-        padding: 32px;
         height: 100%;
 
         h3 {
@@ -174,9 +171,7 @@
         background-color: $color-acento-claro;
         color: $color-fondo-oscuro;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         font-weight: 700;
         margin-bottom: 24px;
         box-shadow: 0 0 18px rgba(183, 109, 255, 0.7);
@@ -241,9 +236,7 @@
         background-color: rgba(183, 109, 255, 0.18);
         border: 1px solid rgba(183, 109, 255, 0.55);
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         margin-bottom: 24px;
         box-shadow: 0 0 24px rgba(183, 109, 255, 0.35);
 

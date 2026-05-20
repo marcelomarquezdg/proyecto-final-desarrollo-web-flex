@@ -107,7 +107,7 @@ h2 {
   padding-left: 10px;
 }
 
-/* INDEX PAGE - FOOTER STYLES */
+/* FOOTER STYLES */
 .footer {
   background-color: #1d1d1d;
   padding: 48px 30px;
@@ -622,6 +622,14 @@ h2 {
   margin-bottom: 0;
 }
 
+/* EXTENDS */
+.process-method .process-method__card, .process-steps .process-steps__item {
+  border: 1px solid #342b3a;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+/* MIXINS */
 /* PROCESS PAGE */
 /* PROCESS PAGE - PROCESS HERO SECTION */
 .process-hero {
@@ -686,9 +694,6 @@ h2 {
 }
 .process-method .process-method__card {
   background-color: rgba(37, 31, 41, 0.72);
-  border: 1px solid #342b3a;
-  border-radius: 16px;
-  padding: 32px;
   height: 100%;
 }
 .process-method .process-method__card h3 {
@@ -745,9 +750,6 @@ h2 {
 }
 .process-steps .process-steps__item {
   background-color: #251f29;
-  border: 1px solid #342b3a;
-  border-radius: 16px;
-  padding: 32px;
   height: 100%;
 }
 .process-steps .process-steps__item h3 {

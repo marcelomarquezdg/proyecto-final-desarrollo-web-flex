@@ -1,0 +1,9 @@
+@use 'variables' as *;
+
+/* EXTENDS */
+
+%card-base {
+    border: 1px solid $color-borde-card;
+    border-radius: 16px;
+    padding: 32px;
+}
