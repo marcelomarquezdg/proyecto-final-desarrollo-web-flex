@@ -1,0 +1,13 @@
+@use 'base/generales';
+@use 'base/variables';
+@use 'base/header';
+@use 'base/footer';
+@use 'base/contact-section';
+
+@use 'pages-scss/index';
+@use 'pages-scss/servicios';
+@use 'pages-scss/proceso';
+@use 'pages-scss/proyectos';
+@use 'pages-scss/contacto';
+
+@use 'base/mediaqueries';

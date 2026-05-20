@@ -1,0 +1,71 @@
+@use 'variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* BASE STYLES */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: $color-texto-principal;
+    background-color: $color-fondo-principal;
+}
+
+/* GENERAL STYLES */
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-texto-principal;
+    line-height: 1.2;
+}
+
+.section-label {
+    display: block;
+    color: $color-acento-texto;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    padding: 16px 24px;
+    border-radius: 12px;
+
+    &--primary {
+        background-color: $color-acento;
+        border: 1px solid $color-acento-claro;
+        color: $color-texto-principal;
+    }
+
+    &--secondary {
+        color: $color-texto-principal;
+        border: 1px solid $color-acento;
+        background-color: $color-boton-secundario-fondo;
+    }
+}
+
+.card-icon {
+    width: 32px;
+    margin-bottom: 24px;
+}
+
+.card-icon--large {
+    width: 46px;
+    margin-bottom: 24px;
+}

@@ -1,0 +1,295 @@
+@use '../base/variables' as *;
+
+/* PROCESS PAGE */
+
+/* PROCESS PAGE - PROCESS HERO SECTION */
+
+.process-hero {
+    background: radial-gradient(circle at right, #12383f 0%, $color-fondo-oscuro 45%, #0f0b13 100%);
+    padding: 80px 30px;
+
+    .process-hero__container {
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+
+    .process-hero__content {
+        max-width: 760px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-bottom: 24px;
+    }
+
+    p {
+        color: $color-texto-secundario;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    .process-hero__buttons {
+        margin-top: 32px;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        .button {
+            width: 100%;
+            max-width: 380px;
+        }
+    }
+
+    .process-hero__image {
+        display: none;
+    }
+}
+
+/* PROCESS PAGE - PROCESS METHOD SECTION */
+
+.process-method {
+    background-color: $color-fondo-profundo;
+    padding: 80px 30px;
+
+    .process-method__container {
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+
+    .process-method__content {
+        max-width: 850px;
+        margin-bottom: 48px;
+
+        p {
+            color: $color-texto-secundario;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+    }
+
+    .process-method__cards {
+        display: grid;
+        gap: 24px;
+    }
+
+    .process-method__card {
+        background-color: rgba(37, 31, 41, 0.72);
+        border: 1px solid $color-borde-card;
+        border-radius: 16px;
+        padding: 32px;
+        height: 100%;
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.2;
+            color: $color-texto-principal;
+            margin-bottom: 14px;
+        }
+
+        p {
+            color: $color-texto-secundario;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    }
+
+    .process-method__card-circle {
+        width: 64px;
+        height: 64px;
+        background-color: rgba(183, 109, 255, 0.18);
+        border: 1px solid rgba(183, 109, 255, 0.35);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        box-shadow: 0 0 18px rgba(183, 109, 255, 0.35);
+
+        img {
+            width: 36px;
+        }
+    }
+}
+
+/* PROCESS PAGE - PROCESS STEPS SECTION */
+
+.process-steps {
+    background-color: $color-fondo-oscuro;
+    padding: 80px 30px;
+
+    .process-steps__container {
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+
+    .process-steps__content {
+        max-width: 760px;
+        margin-bottom: 48px;
+
+        p {
+            color: $color-texto-secundario;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+    }
+
+    .process-steps__list {
+        display: grid;
+        gap: 32px;
+    }
+
+    .process-steps__item {
+        background-color: $color-fondo-card;
+        border: 1px solid $color-borde-card;
+        border-radius: 16px;
+        padding: 32px;
+        height: 100%;
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.2;
+            color: $color-texto-principal;
+            margin-bottom: 14px;
+        }
+
+        p {
+            color: $color-texto-secundario;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    }
+
+    .process-steps__number {
+        width: 48px;
+        height: 48px;
+        background-color: $color-acento-claro;
+        color: $color-fondo-oscuro;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        margin-bottom: 24px;
+        box-shadow: 0 0 18px rgba(183, 109, 255, 0.7);
+    }
+}
+
+/* PROCESS PAGE - PROCESS RESULTS SECTION */
+
+.process-results {
+    background-color: $color-fondo-profundo;
+    padding: 80px 30px;
+
+    .process-results__container {
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+
+    .process-results__content {
+        max-width: 850px;
+        margin-bottom: 48px;
+
+        p {
+            color: $color-texto-secundario;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+    }
+
+    .process-results__cards {
+        display: grid;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .process-results__card {
+        background-color: #251f29a6;
+        border: 1px solid $color-borde-card;
+        border-radius: 16px;
+        padding: 32px;
+        height: 100%;
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.2;
+            color: $color-texto-principal;
+            margin-bottom: 14px;
+        }
+
+        p {
+            color: $color-texto-secundario;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    }
+
+    .process-results__card-circle {
+        width: 56px;
+        height: 56px;
+        background-color: rgba(183, 109, 255, 0.18);
+        border: 1px solid rgba(183, 109, 255, 0.55);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        box-shadow: 0 0 24px rgba(183, 109, 255, 0.35);
+
+        img {
+            width: 36px;
+        }
+    }
+
+    .process-results__highlight {
+        background: radial-gradient(circle at right, rgba(35, 135, 155, 0.25), rgba(37, 31, 41, 0.75) 55%);
+        border: 1px solid rgba(35, 135, 155, 0.74);
+        border-radius: 16px;
+        padding: 32px;
+    }
+
+    .process-results__highlight-circle {
+        width: 56px;
+        height: 56px;
+        background-color: rgba(35, 135, 155, 0.22);
+        border: 1px solid rgba(35, 135, 155, 0.75);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        box-shadow: 0 0 24px rgba(35, 135, 155, 0.4);
+
+        img {
+            width: 36px;
+        }
+    }
+
+    .process-results__highlight-content {
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.2;
+            color: $color-texto-principal;
+            margin-bottom: 14px;
+        }
+
+        p {
+            color: #d8f3f7;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    }
+}

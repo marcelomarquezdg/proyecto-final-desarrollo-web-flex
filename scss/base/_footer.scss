@@ -1,0 +1,59 @@
+@use 'variables' as *;
+
+/* INDEX PAGE - FOOTER STYLES */
+
+.footer {
+    background-color: $color-fondo-principal;
+    padding: 48px 30px;
+
+    .footer__container {
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+
+    .footer__brand {
+        margin-bottom: 32px;
+
+        img {
+            width: 10rem;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: $color-texto-secundario;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    }
+
+    .footer__links {
+        display: grid;
+        gap: 24px;
+    }
+
+    .footer__column {
+        h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: $color-texto-principal;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-texto-secundario;
+            font-size: 0.95rem;
+        }
+    }
+}

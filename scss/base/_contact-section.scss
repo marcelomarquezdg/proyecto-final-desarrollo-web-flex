@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+/* CONTACT CTA SECTION */
+
+.contact {
+    background: radial-gradient(circle at bottom left, #2a1635 0%, $color-fondo-oscuro 45%, #0f0b13 100%);
+    padding: 100px 30px;
+
+    .contact__container {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact__text {
+        margin-bottom: 40px;
+
+        p {
+            color: $color-texto-secundario;
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 620px;
+            margin: 0 auto;
+        }
+    }
+
+    .contact__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .button {
+            width: 100%;
+        }
+    }
+}

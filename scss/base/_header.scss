@@ -1,0 +1,52 @@
+@use 'variables' as *;
+
+/* NAVBAR BOOTSTRAP */
+
+.navbar {
+    background-color: $color-fondo-principal;
+    padding: 10px 30px;
+
+    .container-fluid {
+        max-width: 1350px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .nav-link {
+        color: $color-texto-secundario;
+        font-weight: 400;
+        padding: 6px 0;
+
+        &:hover,
+        &.active {
+            color: $color-texto-principal;
+        }
+    }
+
+    .navbar-nav {
+        gap: 8px;
+    }
+}
+
+.navbar-brand {
+    padding: 0;
+
+    .logo {
+        width: 10rem;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.navbar-collapse {
+    padding-top: 14px;
+    padding-left: 10px;
+}
