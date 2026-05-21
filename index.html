@@ -10,6 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- ANIMATE CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS STYLES -->
 
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -64,7 +72,8 @@
             <div class="hero__container">
                 <div class="hero__content">
                     <span class="hero__label">ESTUDIO DE DISEÑO, COMUNICACIÓN Y ESTRATEGIA DE MARCA</span>
-                    <h1>Tu marca puede comunicar mejor. <span>Nosotros te ayudamos a ordenarla.</span></h1>
+                    <h1 class="animate__animated animate__fadeInLeft">Tu marca puede comunicar mejor. <span>Nosotros te
+                            ayudamos a ordenarla.</span></h1>
                     <p>Ordenamos tu marca y tu comunicación para que te vean más profesional, te entiendan mejor y te
                         elijan
                         con más confianza.</p>
@@ -76,14 +85,15 @@
                     </div>
                 </div>
                 <div class="hero__image">
-                    <img src="./assets/img/rayo-inflatable.webp" alt="Rayo inflable representando energía y crecimiento de marca">
+                    <img src="./assets/img/rayo-inflatable.webp"
+                        alt="Rayo inflable representando energía y crecimiento de marca">
                 </div>
             </div>
         </section>
 
         <!-- PROBLEM SECTION -->
 
-        <section class="problem">
+        <section class="problem" data-aos="fade-up">
             <div class="problem__container">
                 <div class="problem__text">
                     <span class="section-label">EL PROBLEMA NO ES SOLO DISEÑAR Y PUBLICAR MÁS.</span>
@@ -155,7 +165,7 @@
                     </p>
                 </div>
 
-                <div class="solution__cards">
+                <div class="solution__cards" data-aos="fade-left">
                     <div class="card solution__card">
                         <div class="card-body">
                             <img src="./assets/img/icon_card_claridad.svg" alt="Icono representativo de claridad"
@@ -202,9 +212,10 @@
                         entienda mejor y sostenga una presencia más coherente.
                     </p>
                 </div>
-                <div class="services__cards">
+                <div class="services__cards" data-aos="fade-up">
                     <article class="services__card">
-                        <img src="./assets/img/services_card_estrategia-1.webp" alt="Imagen representando estrategia de marca">
+                        <img src="./assets/img/services_card_estrategia-1.webp"
+                            alt="Imagen representando estrategia de marca">
                         <h3>Estrategia de marca</h3>
                         <p>Definimos el enfoque de tu marca, ordenamos sus mensajes y alineamos la comunicación con sus
                             objetivos.</p>
@@ -235,7 +246,7 @@
 
         <!-- PROCESS SECTION -->
 
-        <section class="process">
+        <section class="process" data-aos="fade-up">
             <div class="process__container">
                 <div class="process__text">
                     <span class="section-label">NUESTRO PROCESO</span>
@@ -246,26 +257,26 @@
                     </p>
                 </div>
                 <div class="process__steps">
-                    <article class="process__step">
+                    <article class="process__step" data-aos="flip-left" data-aos-delay="0">
                         <div class="process__number">1</div>
                         <h3>Escuchamos y diagnosticamos</h3>
                         <p>Conocemos tu marca, tus objetivos y los problemas que hoy afectan tu comunicación.
                         </p>
                     </article>
-                    <article class="process__step">
+                    <article class="process__step" data-aos="flip-left" data-aos-delay="500">
                         <div class="process__number">2</div>
                         <h3>Ordenamos la estrategia</h3>
                         <p>Definimos mensajes, prioridades y criterios para que cada acción tenga una dirección clara.
                         </p>
                     </article>
-                    <article class="process__step">
+                    <article class="process__step" data-aos="flip-left" data-aos-delay="1000">
                         <div class="process__number">3</div>
                         <h3>Diseñamos y desarrollamos
                         </h3>
                         <p>Creamos piezas, contenidos y materiales visuales alineados con la identidad de tu marca.
                         </p>
                     </article>
-                    <article class="process__step">
+                    <article class="process__step" data-aos="flip-left" data-aos-delay="1500">
                         <div class="process__number">4</div>
                         <h3>Ajustamos y mejoramos
                         </h3>
@@ -279,7 +290,7 @@
 
         <!-- PROJECTS SECTION -->
 
-        <section class="projects">
+        <section class="projects" data-aos="fade-up">
             <div class="projects__container">
                 <div class="projects__header">
                     <div class="projects__text">
@@ -299,7 +310,8 @@
                         <h3>Identidad visual</h3>
                     </article>
                     <article class="projects__card">
-                        <img src="./assets/img/project_comunicacion_redes.webp" alt="Proyecto de comunicación para redes">
+                        <img src="./assets/img/project_comunicacion_redes.webp"
+                            alt="Proyecto de comunicación para redes">
                         <span class="projects__pill">Contenidos</span>
                         <h3>Comunicación para redes</h3>
                     </article>
@@ -314,7 +326,7 @@
 
         <!-- CONTACT SECTION -->
 
-        <section class="contact">
+        <section class="contact" data-aos="zoom-in">
             <div class="contact__container">
                 <div class="contact__text">
                     <h2>¿Querés ordenar la comunicación de tu marca?</h2>
@@ -360,6 +372,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- AOS JAVASCRIPT -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- INITAILIZE AOS -->
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

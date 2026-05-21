@@ -10,6 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- ANIMATE CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS STYLES -->
 
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -64,7 +71,7 @@
                     <span class="section-label">
                         SERVICIOS
                     </span>
-                    <h1>Servicios para ordenar y potenciar la comunicación de tu marca.</h1>
+                    <h1 class="animate__animated animate__fadeInLeft">Servicios para ordenar y potenciar la comunicación de tu marca.</h1>
                     <p>Combinamos estrategia, diseño y comunicación digital para que tu marca se vea más profesional,
                         comunique con más claridad y sostenga una presencia coherente.</p>
                     <div class="services-hero__buttons">
@@ -81,7 +88,7 @@
 
         <!-- SERVICES AREAS SECTION -->
 
-        <section class="services-areas">
+        <section class="services-areas" data-aos="fade-up">
             <div class="services-areas__container">
                 <div class="services-areas__content">
                     <h2>Tres áreas para ayudarte a comunicar mejor.</h2>
@@ -132,7 +139,7 @@
 
         <!-- SERVICES TABLE SECTION -->
 
-        <section class="services-table" aria-label="Comparativa de servicios de Efelante">
+        <section class="services-table" aria-label="Comparativa de servicios de Efelante" data-aos="fade-up">
             <div class="services-table__container">
                 <div class="services-table__content">
                     <span class="section-label">QUÉ INCLUYE</span>
@@ -208,7 +215,7 @@
 
         <!-- CONTACT SERVICES SECTION -->
 
-        <section class="contact contact--services">
+        <section class="contact contact--services" data-aos="zoom-in">
             <div class="contact__container">
                 <div class="contact__text">
                     <h2>Empecemos por entender qué necesita tu marca.</h2>
@@ -257,6 +264,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- AOS JAVASCRIPT -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- INITAILIZE AOS -->
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

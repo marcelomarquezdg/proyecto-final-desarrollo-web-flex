@@ -10,6 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- ANIMATE CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- CSS STYLES -->
 
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -60,7 +68,7 @@
 
         <section class="projects-list">
             <div class="projects-list__container">
-                <div class="projects-list__intro">
+                <div class="projects-list__intro animate__animated animate__fadeInLeft"">
                     <span class="section-label">
                         PROYECTOS
                     </span>
@@ -70,7 +78,7 @@
                 </div>
 
                 <div class="projects-list__items">
-                    <article class="projects-list__card">
+                    <article class="projects-list__card" data-aos="fade-up">
                         <div class="projects-list__image">
                             <img src="../assets/img/project_diseno-web.webp"
                                 alt="Proyecto de landing page desarrollada para Grales">
@@ -83,7 +91,7 @@
                         </div>
                     </article>
 
-                    <article class="projects-list__card projects-list__card--reverse">
+                    <article class="projects-list__card projects-list__card--reverse" data-aos="fade-up">
                         <div class="projects-list__image">
                             <img src="../assets/img/project_identidad-visual.webp"
                                 alt="Proyecto de estrategia de marca para Grales Travel">
@@ -97,7 +105,7 @@
                         </div>
                     </article>
 
-                    <article class="projects-list__card">
+                    <article class="projects-list__card" data-aos="fade-up">
                         <div class="projects-list__image">
                             <img src="../assets/img/project_comunicacion_redes.webp"
                                 alt="Proyecto de comunicación digital para Olisca">
@@ -110,7 +118,7 @@
                         </div>
                     </article>
 
-                    <article class="projects-list__card projects-list__card--reverse">
+                    <article class="projects-list__card projects-list__card--reverse" data-aos="fade-up">
                         <div class="projects-list__image">
                             <img src="../assets/img/project_diseno-fachada.webp"
                                 alt="Diseño de fachada para local CASUR">
@@ -129,7 +137,7 @@
 
         <!-- PROJECTS CONTACT SECTION -->
 
-        <section class="contact contact--projects">
+        <section class="contact contact--projects" data-aos="zoom-in">
             <div class="contact__container">
                 <div class="contact__text">
                     <h2>¿Querés que tu marca también comunique mejor?</h2>
@@ -178,6 +186,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- AOS JAVASCRIPT -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- INITAILIZE AOS -->
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

@@ -16,8 +16,12 @@
         color: $color-texto-secundario;
         font-weight: 400;
         padding: 6px 0;
+        transition: color 0.3s ease;
 
-        &:hover,
+        &:hover {
+            color: $color-acento-texto;
+        }
+
         &.active {
             color: $color-texto-principal;
         }
